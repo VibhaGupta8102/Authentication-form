@@ -17,7 +17,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://authentication-form-backend.onrender.com/api/auth/login",
         formData
       );
       toast.success(res.data.message); // Optional: You can display it better with UI.
